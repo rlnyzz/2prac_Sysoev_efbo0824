@@ -1,23 +1,33 @@
 {
-  "name": "prac1-2",
+  "name": "digital-store-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "API для интернет-магазина цифровых товаров",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rlnyzz/1-2---------.git"
+    "url": "git+https://github.com/rlnyzz/2prac_Sysoev_efbo0824.git"
   },
-  "keywords": [],
+  "keywords": [
+    "express",
+    "api",
+    "digital-store",
+    "crud"
+  ],
   "author": "Sysoev Vitalik",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rlnyzz/1-2---------/issues"
+    "url": "https://github.com/rlnyzz/2prac_Sysoev_efbo0824/issues"
   },
-  "homepage": "https://github.com/rlnyzz/1-2---------#readme",
+  "homepage": "https://github.com/rlnyzz/2prac_Sysoev_efbo0824#readme",
   "dependencies": {
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
