@@ -1,0 +1,23 @@
+{
+  "name": "prac1-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rlnyzz/1-2---------.git"
+  },
+  "keywords": [],
+  "author": "Sysoev Vitalik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rlnyzz/1-2---------/issues"
+  },
+  "homepage": "https://github.com/rlnyzz/1-2---------#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
