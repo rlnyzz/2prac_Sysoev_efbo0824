@@ -11,6 +11,8 @@ app.use((req, res, next) => {
 
 let products = [
     { id: 1, name: 'wireless headphone', price: 8990 },
+    { id: 2, name: 'headphones lite', price: 2990 },
+    { id: 3, name: 'airpods pro max', price: 12990 },
 ];
 
 let nextId = products.length + 1;
