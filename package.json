@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/rlnyzz/2prac_Sysoev_efbo0824#readme",
   "dependencies": {
+    "cors": "^2.8.6",
     "express": "^5.2.1",
     "nanoid": "^5.1.6"
   },
