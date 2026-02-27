@@ -15,7 +15,7 @@ app.use(cors({
 app.use((req, res, next) => {
   res.on('finish', () => {
     console.log(`[${new Date().toISOString()}] [${req.method}] ${res.statusCode} ${req.path}`);
-    if (req.method === 'POST' || req.method === 'PUT' || req.method === 'PATCH') {
+    if (req.method === 'POST' || req.method === 'PATCH') {
       console.log('Body:', req.body);
     }
   });
@@ -44,9 +44,7 @@ function findProductOr404(id, res) {
   return product;
 }
 
-app.get('/api/products', (req, res) => {
-  res.json(products);
-});
+app.get('/api/products', (req, res) => res.json(products));
 
 app.get('/api/products/:id', (req, res) => {
   const product = findProductOr404(req.params.id, res);

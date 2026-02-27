@@ -1,0 +1,29 @@
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+
+  p {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .btn--primary {
+    background: rgba(99, 102, 241, 0.2);
+    border-color: #6366f1;
+    padding: 10px 20px;
+    
+    &:hover {
+      background: rgba(99, 102, 241, 0.3);
+    }
+  }
+}

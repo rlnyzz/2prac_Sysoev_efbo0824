@@ -1,35 +1,41 @@
 {
   "name": "digital-store-api",
   "version": "1.0.0",
-  "description": "API для интернет-магазина цифровых товаров",
-  "main": "app.js",
+  "description": "Интернет-магазин цифровой техники Сысоева Виталия",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd src && npx react-scripts start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd src && npx react-scripts build",
+    "sass": "sass src:src --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rlnyzz/2prac_Sysoev_efbo0824.git"
-  },
-  "keywords": [
-    "express",
-    "api",
-    "digital-store",
-    "crud"
-  ],
-  "author": "Sysoev Vitalik",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rlnyzz/2prac_Sysoev_efbo0824/issues"
-  },
-  "homepage": "https://github.com/rlnyzz/2prac_Sysoev_efbo0824#readme",
   "dependencies": {
-    "cors": "^2.8.6",
     "express": "^5.2.1",
-    "nanoid": "^5.1.6"
+    "cors": "^2.8.5",
+    "nanoid": "^5.1.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "axios": "^1.7.9"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
-  }
+    "nodemon": "^3.1.9",
+    "concurrently": "^9.1.2",
+    "sass": "^1.85.1",
+    "react-scripts": "5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:3000"
 }
