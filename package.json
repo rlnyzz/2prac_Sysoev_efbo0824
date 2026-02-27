@@ -6,24 +6,24 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "client": "cd src && npx react-scripts start",
+    "client": "npx react-scripts start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "cd src && npx react-scripts build",
     "sass": "sass src:src --watch"
   },
   "dependencies": {
-    "express": "^5.2.1",
+    "axios": "^1.7.9",
     "cors": "^2.8.5",
+    "express": "^5.2.1",
     "nanoid": "^5.1.6",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "axios": "^1.7.9"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "nodemon": "^3.1.9",
-    "concurrently": "^9.1.2",
-    "sass": "^1.85.1",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "sass": "^1.85.1"
   },
   "browserslist": {
     "production": [
